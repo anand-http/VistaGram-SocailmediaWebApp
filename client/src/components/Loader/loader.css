@@ -1,0 +1,33 @@
+.loadingPage {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 8px solid #333;
+  border-top: 5px solid #ffffff;
+  animation: loading 1s linear infinite;
+}
+
+.loadingText {
+  margin-top: 1vmax !important;
+  color: #333;
+  font-weight: 600;
+}
+
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

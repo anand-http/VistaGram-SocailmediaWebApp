@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+    width: 10vw;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@font-face {
+    font-family: "insta";
+    src: url(../../instagram-new-font/Demo_Fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf);
+}
+
+.header>p{
+   font-family: "insta";
+   font-size: 1.5rem;
+}
+
+@media screen and (max-width:601px) {
+    .header>p{
+        display: none;
+    }
+}
+
+
+.header>a>svg {
+    width: 8vw;
+    color: gray;
+}
+
+.header>a>svg:hover {
+    transform: scale(1.3);
+    color: black;
+}
+
+
+@media screen and (max-width:600px) {
+    .header>a {
+        margin: 2vw 10vw;
+    }
+
+    .header>a>svg {
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        width: 100vw;
+        height: 7vh;
+        bottom: 0;
+        position: fixed;
+        flex-direction: row;
+    }
+}

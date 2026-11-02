@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  /* scrollbar-width: thin;
+  scrollbar-color: transparent transparent; */
+
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.app-container {
+  margin-left: 10vw;
+  margin-top: 8vh;
+  width: 90vw;
+}
+
+@media screen and (max-width:768px) {
+  .app-container {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
+
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */

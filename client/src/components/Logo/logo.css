@@ -1,0 +1,25 @@
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 7vh;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    padding: .5vmax;
+    z-index: 6;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@font-face {
+    font-family: "insta";
+    src: url(../../instagram-new-font/Demo_Fonts/Fontspring-DEMO-blue_vinyl_regular_ps_ot.otf);
+}
+
+.logo>p{
+   font-family: "insta";
+   font-size: 3rem;
+}
